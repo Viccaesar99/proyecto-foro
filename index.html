@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/Index-style.css">
 	<title>ExploraRD | Inicio</title>
 </head>
 <body>
@@ -17,13 +18,15 @@
 		</header>
 		<section class="buscar-mostrar-container">
 			<section class="buscador-lugares-container">
-				<h2 class="titulo-buscador">
+				<div class="intermediario">
+					<h2 class="titulo-buscador">
 					Todos los puntos turisticos del pais
 					en un solo lugar
 				</h2>
 				<div class="barra-busqueda-container">
-					<input type="search" name="buscador" id="buscador">
-					<span>icono-busqueda</span>
+					<input type="search" name="buscador" id="buscador" placeholder="Buscar lugares">
+					<button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
 				</div>
 			</section>
 			<section class="mostrar-lugares-container">
@@ -186,5 +189,6 @@
 			</section>
 		</footer>
 	</main>
+<script src="https://kit.fontawesome.com/62bb77c184.js" crossorigin="anonymous"></script>
 </body>
 </html>
