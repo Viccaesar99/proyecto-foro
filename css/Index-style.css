@@ -1,395 +1,395 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    overflow-x: hidden;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .main-container {
-    max-width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 1fr 1fr auto;
+	max-width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto 1fr 1fr auto;
 }
 
 .cabecera {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 10%;
 
-    .titulo-principal{
-        font-family: "Montserrat";
-        cursor: pointer;
-        color: #2e2e2e;
-    }
+	.titulo-principal{
+		font-family: "Montserrat";
+		cursor: pointer;
+		color: #2e2e2e;
+	}
 
-    .nav-principal {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        width: max-content;
+	.nav-principal {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		width: max-content;
 
-        a {
-            display: flex;
-            text-align: center;
-            padding: 10px 12px;
-            text-decoration: none;
-            font-family: "Lato", sans-serif;
-            font-weight: bold;
-            color: #2e2e2e;
-            align-items: center;
-            justify-content: center;
-            font-size: 15px;
+		a {
+			display: flex;
+			text-align: center;
+			padding: 10px 12px;
+			text-decoration: none;
+			font-family: "Lato", sans-serif;
+			font-weight: bold;
+			color: #2e2e2e;
+			align-items: center;
+			justify-content: center;
+			font-size: 15px;
 
-            
-        }
-        a:hover {
-            color: #388E3C;
-            transition: all ease-in-out .3s;
-        }
 
-        :nth-child(3) {
-            background-color: #388E3C;
-            color: #f1f0f0;
-            border-radius: 8px;
-            border: 1px solid #388E3C;
+		}
+		a:hover {
+			color: #388E3C;
+			transition: all ease-in-out .3s;
+		}
 
-            
-        }
+		:nth-child(3) {
+			background-color: #388E3C;
+			color: #f1f0f0;
+			border-radius: 8px;
+			border: 1px solid #388E3C;
 
-        :nth-child(3):hover {
-                background: transparent;
-                border: 1px solid #388E3C;
-            } 
-    }
+
+		}
+
+		:nth-child(3):hover {
+			background: transparent;
+			border: 1px solid #388E3C;
+		} 
+	}
 
 
 }
 
 .buscar-mostrar-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 
-    .buscador-lugares-container {
-        height: 700px;
-        width: 100%;
+	.buscador-lugares-container {
+		height: 700px;
+		width: 100%;
 
-        background-image: url("../assets/img/cocoteros-playa-la-altagracia.jpg");
-        background-position: center;
-        background-size: cover;
+		background-image: url("../assets/img/cocoteros-playa-la-altagracia.jpg");
+		background-position: center;
+		background-size: cover;
 
-        .intermediario {
-            width: 100%;
-            height: 100%;
-            background-color: #00000069;
+		.intermediario {
+			width: 100%;
+			height: 100%;
+			background-color: #00000069;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 30px;
 
-            .titulo-buscador {
-            font-family: "Poppins";
-            max-width: 40%;
-            text-align: center;
-            color: #dfdfdf;
-            }
+			.titulo-buscador {
+				font-family: "Poppins";
+				max-width: 40%;
+				text-align: center;
+				color: #dfdfdf;
+			}
 
-            .barra-busqueda-container {
-                background-color: #e4e4e4;
-                width: max-content;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 10px;
-                padding-right: 3px;
+			.barra-busqueda-container {
+				background-color: #e4e4e4;
+				width: max-content;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 10px;
+				padding-right: 3px;
 
 
-                input {
-                    width: 300px;
-                    height: 100%;
-                    border-top-left-radius: 10px;
-                    border-bottom-left-radius: 10px;
-                    padding: 0 20px;
-                    border: none;
-                    font-size: medium;
-                    color: #2e2e2e;
-                    background-color: #e4e4e4;
-                    
+				input {
+					width: 300px;
+					height: 100%;
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
+					padding: 0 20px;
+					border: none;
+					font-size: medium;
+					color: #2e2e2e;
+					background-color: #e4e4e4;
 
-                }
-                input:hover {
-                    background-color: #ececec;
-                }
 
-                input:focus {
-                    outline: none;
-                    background-color: #ececec;
-                }
+				}
+				input:hover {
+					background-color: #ececec;
+				}
 
-                button {
-                    height: 90%;
-                    width: 50px;
-                    background-color: #e4e4e4;
-                    border-radius: 10px;
-                    cursor: pointer;
-                    border: none;
-                    
-                    i {
-                        font-size: larger;
-                        color: #2e2e2e;
-                    }
-                    
-                }
-                button:hover {
-                    background-color: #dbdbdb;
-                }
-            }
-        }
+				input:focus {
+					outline: none;
+					background-color: #ececec;
+				}
 
-        
-    }
+				button {
+					height: 90%;
+					width: 50px;
+					background-color: #e4e4e4;
+					border-radius: 10px;
+					cursor: pointer;
+					border: none;
 
-    .mostrar-lugares-container {
-        display: flex;
-        width: 100%;
-        padding: 20px 40px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        h2 {
-            font-family: "Poppins";
-            color: #2e2e2e;
-        }
+					i {
+						font-size: larger;
+						color: #2e2e2e;
+					}
 
-        
+				}
+				button:hover {
+					background-color: #dbdbdb;
+				}
+			}
+		}
 
-        .lugares-container {
-            max-width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
 
-            .card-lugar {
-                width: 300px;
-                height: max-content;
-                padding: 10px;
+	}
 
-                img {
-                    width: 100%;
-                    height: 200px;
-                    object-position: center;
-                    object-fit: cover;
-                }
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	.mostrar-lugares-container {
+		display: flex;
+		width: 100%;
+		padding: 20px 40px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		h2 {
+			font-family: "Poppins";
+			color: #2e2e2e;
+		}
 
-                .info-container {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
-                    gap: 10px;
-                    flex-direction: column;
-                    height: 160px;
-                    h4 {
-                        font-family: "Poppins";
-                        font-size: large;
-                        color: #2e2e2e;
-                    }
 
-                    p {
-                        font-family: "Lato";
-                        color: #505050;
-                        font-weight: bold;
-                    }
-                    .calification-container {
-                        display: flex;
-                        p {
-                            margin-left: 10px;
-                        }
-                        
-                    }
 
-                    button {
-                        width: 100%;
-                        height: 75px;
-                        background-color: #388E3C;
-                        border: none;
-                        border-radius: 5px;
-                        font-family: "Lato";
-                        color: #dfdfdf;
-                        font-weight: bold;
-                        font-size: medium;
-                        cursor: pointer;
-                        text-align: center;
-                    }
-    
-                }
-                
+		.lugares-container {
+			max-width: 80%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 20px;
 
-            }
-            .card-lugar:hover {
-                scale: 103%;
-                transition: all .3s ease-out;
+			.card-lugar {
+				width: 300px;
+				height: max-content;
+				padding: 10px;
 
-            }
+				img {
+					width: 100%;
+					height: 200px;
+					object-position: center;
+					object-fit: cover;
+				}
+				box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-        }
-        .lugares-container::-webkit-scrollbar {
-            display: none;
-        }
-    }
+				.info-container {
+					display: flex;
+					align-items: flex-start;
+					justify-content: center;
+					gap: 10px;
+					flex-direction: column;
+					height: 170px;
+					h4 {
+						font-family: "Poppins";
+						font-size: large;
+						color: #2e2e2e;
+					}
+
+					p {
+						font-family: "Lato";
+						color: #505050;
+						font-weight: bold;
+					}
+					.calification-container {
+						display: flex;
+						p {
+							margin-left: 10px;
+						}
+
+					}
+
+					button {
+						width: 100%;
+						height: 75px;
+						background-color: #388E3C;
+						border: none;
+						border-radius: 5px;
+						font-family: "Lato";
+						color: #dfdfdf;
+						font-weight: bold;
+						font-size: medium;
+						cursor: pointer;
+						text-align: center;
+					}
+
+				}
+
+
+			}
+			.card-lugar:hover {
+				scale: 103%;
+				transition: all .3s ease-out;
+
+			}
+
+		}
+		.lugares-container::-webkit-scrollbar {
+			display: none;
+		}
+	}
 }
 
 .articulos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
-    article {
-        width: 80%;
-        height: 600px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+	article {
+		width: 80%;
+		height: 600px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 
 
 
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 50%;
-            h3 {
-                font-family: "Poppins";
-                font-size: large;
-                color: #2e2e2e;
-                font-size: 25px;
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 20px;
+			max-width: 50%;
+			h3 {
+				font-family: "Poppins";
+				font-size: large;
+				color: #2e2e2e;
+				font-size: 25px;
 
-            }
-            p {
-                font-family: "Lato";
-                font-weight: bold;
-                color: #505050;
-                font-size: 15px;
-            }
-            button {
-                width: 150px;
-                height: 40px;
-                border: none;
-                background-color: #388E3C;
-                color: #dfdfdf;
-                font-family: "Lato";
-                font-weight: bold;
-                border-radius: 8px;
-                cursor: pointer;
-                font-size: 14px;
-            }
-        }
-    }
+			}
+			p {
+				font-family: "Lato";
+				font-weight: bold;
+				color: #505050;
+				font-size: 15px;
+			}
+			button {
+				width: 150px;
+				height: 40px;
+				border: none;
+				background-color: #388E3C;
+				color: #dfdfdf;
+				font-family: "Lato";
+				font-weight: bold;
+				border-radius: 8px;
+				cursor: pointer;
+				font-size: 14px;
+			}
+		}
+	}
 
-    article:nth-child(2) {
-        background-color: #ececec;
+	article:nth-child(2) {
+		background-color: #ececec;
 
-    }
+	}
 
-    article:nth-child(4) {
-        background-color: #ececec;
+	article:nth-child(4) {
+		background-color: #ececec;
 
-    }
+	}
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
-    background-color: #2e2e2e;
-    gap: 30px;
-    
-    .nav-container {
-        width: 80%;
-        height: 300px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 20px;
-        h2 {
-            font-family: "Poppins";
-            color: #dfdfdf;
-        }
-        .navbar-footer {
-            nav {
-                width: 300px;
-                height: max-content;
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                flex-direction: column;
-                a {
-                    width: 100%;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-                    font-family: "Lato";
-                    font-weight: bold;
-                    color: #afafaf;
-                    
-                }
-                a:hover {
-                    color: #dbdbdb;
-                    transition: all .3s linear;
-                }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px;
+	background-color: #2e2e2e;
+	gap: 30px;
+
+	.nav-container {
+		width: 80%;
+		height: 300px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		gap: 20px;
+		h2 {
+			font-family: "Poppins";
+			color: #dfdfdf;
+		}
+		.navbar-footer {
+			nav {
+				width: 300px;
+				height: max-content;
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				flex-direction: column;
+				a {
+					width: 100%;
+					height: 50px;
+					display: flex;
+					align-items: center;
+					text-decoration: none;
+					font-family: "Lato";
+					font-weight: bold;
+					color: #afafaf;
+
+				}
+				a:hover {
+					color: #dbdbdb;
+					transition: all .3s linear;
+				}
 
 
-            }
-            
+			}
 
-        }
-    }
-    
+
+		}
+	}
+
 }
 
 .social-media-container {
-    width: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    div {
-        color: #b1b1b1;
-        font-weight: bold;
-        height: 50px;
-    }
-    :nth-child(2){
-        a {
-            text-decoration: none;
-            color: #dbdbdb;
-            font-size: 24px;
-        }
-    }
+	width: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	div {
+		color: #b1b1b1;
+		font-weight: bold;
+		height: 50px;
+	}
+	:nth-child(2){
+		a {
+			text-decoration: none;
+			color: #dbdbdb;
+			font-size: 24px;
+		}
+	}
 
 
 
@@ -397,14 +397,14 @@ footer {
 }
 
 .privacy-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    color: #b1b1b1;
-    font-family: monospace;
-    font-size: 15px;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	color: #b1b1b1;
+	font-family: monospace;
+	font-size: 15px;
+	width: 100%;
 }
 
 
